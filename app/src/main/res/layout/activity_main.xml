@@ -6,27 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.colors.Colors
-        android:id="@+id/frameColors"
-        android:layout_width="387dp"
-        android:layout_height="152dp"
-        android:layout_marginTop="8dp"
+    <com.v0lky1.diceapp.Views.DiceView
+        android:id="@+id/diceViewOne"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textColors" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.colors.TextColors
-        android:id="@+id/textColors"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/throwDiceOne"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="clickListener"
+        android:text="Roll 'm!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent" />
 
-    </com.example.colors.TextColors>
+    <com.v0lky1.diceapp.Views.DiceView
+        android:id="@+id/diceViewTwo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/throwDiceOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diceViewOne" />
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.colors;
+package com.v0lky1.diceapp;
 
 import org.junit.Test;
 
